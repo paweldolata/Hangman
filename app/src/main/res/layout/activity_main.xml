@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        android:textSize="14sp"
+        android:weightSum="7">
+
+        <TextView
+            android:id="@+id/textViewUp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Can You save Blazej" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        android:textSize="14sp"
+        android:weightSum="7">
+
+        <Button
+            android:id="@+id/GenerateButton"
+            android:onClick="generate"
+            android:layout_width="@dimen/abc_action_bar_stacked_max_height"
+            android:layout_height="fill_parent"
+            android:layout_weight="3.11"
+            android:gravity="center"
+            android:text="Generate Word"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageHangman"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:layout_weight="2.5"
+        android:src="@drawable/hangman_gray" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25"
+        android:gravity="center"
+        android:text="What is the word?" />
+
+    <TextView
+        android:id="@+id/textShow"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#ff000000"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/textPut"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:maxLines="1"
+        android:orientation="horizontal"
+
+
+        />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.65"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        android:textSize="14sp"
+        android:weightSum="7">
+
+        <Button
+            android:id="@+id/buttonCheckLetter"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.78"
+            android:onClick="checkLetter"
+            android:clickable="false"
+            android:textColor="#000000"
+            android:text="Check letter" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:text="" />
+
+        <Button
+            android:id="@+id/buttonCheckWord"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:onClick="checkWord"
+            android:clickable="false"
+            android:textColor="#000000"
+
+            android:text="Check Word" />
+    </LinearLayout>
+</LinearLayout>
